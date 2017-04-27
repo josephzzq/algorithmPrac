@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "algorithmPrac-swift.h"
 
 @interface ViewController ()
 
@@ -21,7 +22,11 @@
     NSArray *testArray=@[@6,@5,@4,@3,@2,@1];
     NSArray *insertSortResult=[self insertSort:testArray];
     NSArray *selectionSortResult=[self selectionSort:testArray];
-    NSLog(@"result %@,%@",insertSortResult,selectionSortResult);
+    NSArray *swiftSelectionSortResult=[[algorithm shareInstance] selectionSort:testArray];
+
+    NSLog(@"result %@,%@,%@",insertSortResult,selectionSortResult,swiftSelectionSortResult);
+    
+    
 }
 
 

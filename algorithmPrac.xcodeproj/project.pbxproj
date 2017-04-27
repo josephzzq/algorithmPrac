@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		116D048E1EB1D04100EA0480 /* algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116D048D1EB1D04100EA0480 /* algorithm.swift */; };
 		29E9C4C31E87B6280090F70E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E9C4C21E87B6280090F70E /* main.m */; };
 		29E9C4C61E87B6280090F70E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E9C4C51E87B6280090F70E /* AppDelegate.m */; };
 		29E9C4C91E87B6280090F70E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E9C4C81E87B6280090F70E /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		116D048C1EB1D04000EA0480 /* algorithmPrac-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "algorithmPrac-Bridging-Header.h"; sourceTree = "<group>"; };
+		116D048D1EB1D04100EA0480 /* algorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = algorithm.swift; sourceTree = "<group>"; };
 		29E9C4BE1E87B6280090F70E /* algorithmPrac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = algorithmPrac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E9C4C21E87B6280090F70E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29E9C4C41E87B6280090F70E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,11 +65,13 @@
 				29E9C4C51E87B6280090F70E /* AppDelegate.m */,
 				29E9C4C71E87B6280090F70E /* ViewController.h */,
 				29E9C4C81E87B6280090F70E /* ViewController.m */,
+				116D048D1EB1D04100EA0480 /* algorithm.swift */,
 				29E9C4CA1E87B6280090F70E /* Main.storyboard */,
 				29E9C4CD1E87B6280090F70E /* Assets.xcassets */,
 				29E9C4CF1E87B6280090F70E /* LaunchScreen.storyboard */,
 				29E9C4D21E87B6280090F70E /* Info.plist */,
 				29E9C4C11E87B6280090F70E /* Supporting Files */,
+				116D048C1EB1D04000EA0480 /* algorithmPrac-Bridging-Header.h */,
 			);
 			path = algorithmPrac;
 			sourceTree = "<group>";
@@ -110,6 +115,7 @@
 				TargetAttributes = {
 					29E9C4BD1E87B6270090F70E = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -151,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29E9C4C91E87B6280090F70E /* ViewController.m in Sources */,
+				116D048E1EB1D04100EA0480 /* algorithm.swift in Sources */,
 				29E9C4C61E87B6280090F70E /* AppDelegate.m in Sources */,
 				29E9C4C31E87B6280090F70E /* main.m in Sources */,
 			);
@@ -270,10 +277,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = algorithmPrac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wordpress.dosomethingq.algorithmPrac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "algorithmPrac/algorithmPrac-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -281,10 +292,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = algorithmPrac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wordpress.dosomethingq.algorithmPrac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "algorithmPrac/algorithmPrac-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -307,6 +321,7 @@
 				29E9C4D71E87B6280090F70E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
