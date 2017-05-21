@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "algorithmPrac-swift.h"
 
+#define MAX_COUNT 10000
+
 @interface ViewController ()
 
 @end
@@ -19,12 +21,23 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSArray *testArray=@[@6,@5,@4,@3,@2,@1];
+    
+    NSMutableArray *testArray = [[NSMutableArray alloc]initWithCapacity:MAX_COUNT];
+    
+    for (int i=0; i<MAX_COUNT; i++) {
+        
+        NSNumber *randomNum = [NSNumber numberWithInt:arc4random() % MAX_COUNT +1];
+        [testArray addObject:randomNum];
+    }
+//    NSLog(@"testArray %@",testArray);
+//    NSArray *testArray=@[@6,@5,@4,@3,@2,@1,@10,@7,@9,@8];
     NSArray *insertSortResult=[self insertSort:testArray];
     NSArray *selectionSortResult=[self selectionSort:testArray];
+    NSArray *heapSortResult=[self heapSort:testArray];
+
     NSArray *swiftSelectionSortResult=[[algorithm shareInstance] selectionSort:testArray];
 
-    NSLog(@"result %@,%@,%@",insertSortResult,selectionSortResult,swiftSelectionSortResult);
+//    NSLog(@"result %@,%@,%@,%@",insertSortResult,selectionSortResult,swiftSelectionSortResult,heapSortResult);
     
     
 }
@@ -94,7 +107,63 @@
     }
     [self timeConsume:methodStart name:NSStringFromSelector(_cmd)];
     return resultArray;
+#warning to do , above result had a little issue
 }
+
+// O(n log (n))
+-(NSArray*)heapSort:(NSArray*)dataArray{
+    
+    NSDate *methodStart = [NSDate date];
+
+    NSMutableArray *sortArray=[[NSMutableArray alloc]initWithArray:dataArray];
+    
+    // Sort max heap in the node
+    int j = (sortArray.count/2)-1;
+    while (j>=0) {
+        [self maxHeapInTheNote:sortArray root:j count:sortArray.count];
+        j--;
+    }
+    
+    
+    int k = sortArray.count-1;
+    while (k>0) {
+        // swap top with bottom
+        [sortArray exchangeObjectAtIndex:0 withObjectAtIndex:k];
+        
+        // max heap again beacause swap top and bottom
+        [self maxHeapInTheNote:sortArray root:0 count:k];
+        
+        k--;
+    }
+    
+    [self timeConsume:methodStart name:NSStringFromSelector(_cmd)];
+    return sortArray;
+}
+
+-(void)maxHeapInTheNote:(NSMutableArray*)datas root:(int)rootNode count:(int)length{
+    
+    int leftChild = rootNode*2+1;
+    int rightChild = rootNode*2+2;
+    int maxNode = -1;
+    
+    // find the largest in left,right,root node
+    if(leftChild < length && [datas[leftChild]intValue] > [datas[rootNode]intValue]){
+        maxNode = leftChild;
+    }else{
+        maxNode = rootNode;
+    }
+    
+    if(rightChild < length && [datas[rightChild]intValue] > [datas[maxNode]intValue]){
+        maxNode = rightChild;
+    }
+
+    if(maxNode != rootNode){
+        [datas exchangeObjectAtIndex:rootNode withObjectAtIndex:maxNode];
+        [self maxHeapInTheNote:datas root:maxNode count:length];
+    }
+    
+}
+
 
 
 @end
