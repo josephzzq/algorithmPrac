@@ -8,21 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		116D048E1EB1D04100EA0480 /* algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116D048D1EB1D04100EA0480 /* algorithm.swift */; };
+		299C30E81ED191A60049B6BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 299C30E71ED191A60049B6BE /* main.m */; };
+		299C30EE1ED191E30049B6BE /* sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 299C30ED1ED191E30049B6BE /* sort.m */; };
+		299C30F11ED1922E0049B6BE /* sortTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 299C30F01ED1922E0049B6BE /* sortTools.m */; };
+		299C30F51ED1B84D0049B6BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 299C30F41ED1B84D0049B6BE /* AppDelegate.m */; };
 		29E9C4C31E87B6280090F70E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E9C4C21E87B6280090F70E /* main.m */; };
-		29E9C4C61E87B6280090F70E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E9C4C51E87B6280090F70E /* AppDelegate.m */; };
 		29E9C4C91E87B6280090F70E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E9C4C81E87B6280090F70E /* ViewController.m */; };
 		29E9C4CC1E87B6280090F70E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E9C4CA1E87B6280090F70E /* Main.storyboard */; };
 		29E9C4CE1E87B6280090F70E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E9C4CD1E87B6280090F70E /* Assets.xcassets */; };
 		29E9C4D11E87B6280090F70E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E9C4CF1E87B6280090F70E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		299C30E31ED191A60049B6BE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		116D048C1EB1D04000EA0480 /* algorithmPrac-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "algorithmPrac-Bridging-Header.h"; sourceTree = "<group>"; };
 		116D048D1EB1D04100EA0480 /* algorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = algorithm.swift; sourceTree = "<group>"; };
+		299C30E51ED191A60049B6BE /* algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
+		299C30E71ED191A60049B6BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		299C30EC1ED191E30049B6BE /* sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sort.h; sourceTree = "<group>"; };
+		299C30ED1ED191E30049B6BE /* sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sort.m; sourceTree = "<group>"; };
+		299C30EF1ED1922E0049B6BE /* sortTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sortTools.h; sourceTree = "<group>"; };
+		299C30F01ED1922E0049B6BE /* sortTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sortTools.m; sourceTree = "<group>"; };
+		299C30F31ED1B84D0049B6BE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		299C30F41ED1B84D0049B6BE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		29E9C4BE1E87B6280090F70E /* algorithmPrac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = algorithmPrac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E9C4C21E87B6280090F70E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29E9C4C41E87B6280090F70E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		29E9C4C51E87B6280090F70E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		29E9C4C71E87B6280090F70E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		29E9C4C81E87B6280090F70E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		29E9C4CB1E87B6280090F70E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +53,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		299C30E21ED191A60049B6BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29E9C4BB1E87B6270090F70E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,10 +70,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		299C30E61ED191A60049B6BE /* algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				299C30E71ED191A60049B6BE /* main.m */,
+				299C30EC1ED191E30049B6BE /* sort.h */,
+				299C30ED1ED191E30049B6BE /* sort.m */,
+				299C30EF1ED1922E0049B6BE /* sortTools.h */,
+				299C30F01ED1922E0049B6BE /* sortTools.m */,
+			);
+			path = algorithm;
+			sourceTree = "<group>";
+		};
 		29E9C4B51E87B6270090F70E = {
 			isa = PBXGroup;
 			children = (
 				29E9C4C01E87B6280090F70E /* algorithmPrac */,
+				299C30E61ED191A60049B6BE /* algorithm */,
 				29E9C4BF1E87B6280090F70E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				29E9C4BE1E87B6280090F70E /* algorithmPrac.app */,
+				299C30E51ED191A60049B6BE /* algorithm */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,8 +103,8 @@
 		29E9C4C01E87B6280090F70E /* algorithmPrac */ = {
 			isa = PBXGroup;
 			children = (
-				29E9C4C41E87B6280090F70E /* AppDelegate.h */,
-				29E9C4C51E87B6280090F70E /* AppDelegate.m */,
+				299C30F31ED1B84D0049B6BE /* AppDelegate.h */,
+				299C30F41ED1B84D0049B6BE /* AppDelegate.m */,
 				29E9C4C71E87B6280090F70E /* ViewController.h */,
 				29E9C4C81E87B6280090F70E /* ViewController.m */,
 				116D048D1EB1D04100EA0480 /* algorithm.swift */,
@@ -87,6 +129,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		299C30E41ED191A60049B6BE /* algorithm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 299C30EB1ED191A60049B6BE /* Build configuration list for PBXNativeTarget "algorithm" */;
+			buildPhases = (
+				299C30E11ED191A60049B6BE /* Sources */,
+				299C30E21ED191A60049B6BE /* Frameworks */,
+				299C30E31ED191A60049B6BE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = algorithm;
+			productName = algorithm;
+			productReference = 299C30E51ED191A60049B6BE /* algorithm */;
+			productType = "com.apple.product-type.tool";
+		};
 		29E9C4BD1E87B6270090F70E /* algorithmPrac */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29E9C4D51E87B6280090F70E /* Build configuration list for PBXNativeTarget "algorithmPrac" */;
@@ -113,6 +172,10 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = dosomethingq;
 				TargetAttributes = {
+					299C30E41ED191A60049B6BE = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					29E9C4BD1E87B6270090F70E = {
 						CreatedOnToolsVersion = 8.2.1;
 						LastSwiftMigration = 0820;
@@ -134,6 +197,7 @@
 			projectRoot = "";
 			targets = (
 				29E9C4BD1E87B6270090F70E /* algorithmPrac */,
+				299C30E41ED191A60049B6BE /* algorithm */,
 			);
 		};
 /* End PBXProject section */
@@ -152,13 +216,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		299C30E11ED191A60049B6BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				299C30E81ED191A60049B6BE /* main.m in Sources */,
+				299C30F11ED1922E0049B6BE /* sortTools.m in Sources */,
+				299C30EE1ED191E30049B6BE /* sort.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29E9C4BA1E87B6270090F70E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				299C30F51ED1B84D0049B6BE /* AppDelegate.m in Sources */,
 				29E9C4C91E87B6280090F70E /* ViewController.m in Sources */,
 				116D048E1EB1D04100EA0480 /* algorithm.swift in Sources */,
-				29E9C4C61E87B6280090F70E /* AppDelegate.m in Sources */,
 				29E9C4C31E87B6280090F70E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,6 +259,26 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		299C30E91ED191A60049B6BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		299C30EA1ED191A60049B6BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		29E9C4D31E87B6280090F70E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -305,6 +399,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		299C30EB1ED191A60049B6BE /* Build configuration list for PBXNativeTarget "algorithm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				299C30E91ED191A60049B6BE /* Debug */,
+				299C30EA1ED191A60049B6BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		29E9C4B91E87B6270090F70E /* Build configuration list for PBXProject "algorithmPrac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

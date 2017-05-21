@@ -12,14 +12,6 @@ class algorithm : NSObject {
     
     static let shareInstance = algorithm()
     
-    
-    
-    
-    
-    
-    
-    
-    
     //MARK: - Selection Sort
     func selectionSort(_ array: [Int]) -> [Int] {
         guard array.count > 1 else { return array }
