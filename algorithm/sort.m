@@ -125,4 +125,8 @@
     
 }
 
++(void)algorithmQuickSort:(NSArray*)datas{
+    
+}
+
 @end
