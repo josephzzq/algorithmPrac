@@ -57,16 +57,17 @@
         for (NSInteger y=x+1; y<sortArray.count; y++) {
             
             if ([sortArray[y]integerValue] < lowest) {
+                
+                lowest = [sortArray[y]integerValue];
+                
                 // swap them
                 [sortArray exchangeObjectAtIndex:y withObjectAtIndex:x];
             }
         }
     }
-    
-    assert(![sortTools arrayIsSorted:resultArray]);
+    assert([sortTools arrayIsSorted:resultArray]);
     [sortTools timeConsume:methodStart name:NSStringFromSelector(_cmd)];
     return resultArray;
-#warning to do , above result had a little issue
 }
 
 
