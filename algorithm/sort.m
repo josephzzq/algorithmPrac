@@ -102,6 +102,12 @@
     return sortArray;
 }
 
++(void)algorithmQuickSort:(NSArray*)datas{
+    
+}
+
+
+// privacy method
 +(void)maxHeapInTheNote:(NSMutableArray*)datas root:(NSInteger)rootNode count:(NSInteger)length{
     
     NSInteger leftChild = rootNode*2+1;
@@ -123,10 +129,6 @@
         [datas exchangeObjectAtIndex:rootNode withObjectAtIndex:maxNode];
         [self maxHeapInTheNote:datas root:maxNode count:length];
     }
-    
-}
-
-+(void)algorithmQuickSort:(NSArray*)datas{
     
 }
 
